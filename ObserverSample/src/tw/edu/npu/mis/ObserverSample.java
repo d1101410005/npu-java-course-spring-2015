@@ -39,12 +39,14 @@ public class ObserverSample {
         // Initialize MVC and Window objects.
         Window window = new Window();
         Model model = new Model();
+        List<Showable> views = new ArrayList<>();
         Controller controller = new Controller(model);
-        List<View> views = new ArrayList<>();
+//        List<View> views = new ArrayList<>();
         views.add(new View("View 1", window, model));
         views.add(new View("View 2", window, model));
         views.add(new View("View 3", window, model));
-
+        views.add(new AlternativeView("View ", window, model));
+        
         // Start the event loop.
         window.startEventLoop(controller, views);
     }
