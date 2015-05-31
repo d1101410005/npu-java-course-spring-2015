@@ -33,8 +33,13 @@ import java.util.Scanner;
  * @author Samael Wang <freesamael@gmail.com>
  */
 public class Controller {
+   
 
     private final Model mModel;
+    /**
+     * Controller class定義建構子
+     * @param model 
+     */
 
     public Controller(Model model) {
         mModel = model;
