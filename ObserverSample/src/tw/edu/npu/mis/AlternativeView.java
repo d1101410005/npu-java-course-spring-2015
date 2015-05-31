@@ -40,6 +40,7 @@ public class AlternativeView implements Observer , Showable{
     
 /**
  * AlternativeView class定義建構子
+ * @param name  
  * @param window
  * @param model 
  */
@@ -53,25 +54,16 @@ public class AlternativeView implements Observer , Showable{
     private void invalidate() {
         mWindow.schduleRedraw(this);
     }
-   /* public boolean isValid() {
-        return mIsValid;
-    }
-    
-      public void show() {
-        System.out.print("View: ");
-        System.out.println(new StringBuilder(mModel.getData()).reverse());
-        mIsValid = true;
-    }
-    */
+
     public void onDraw() {
         System.out.println("AlternativeView (" + mName + "): "+ new StringBuilder(mModel.getData()).reverse());
-        //mIsValid = false;
+        
     }
     
     @Override
     public void update() {
         invalidate();
-        //mIsValid = false;
+        
     }
     
 }
