@@ -35,6 +35,12 @@ public class View implements Observer, Showable{
     private final String mName;
     private final Window mWindow;
     private final Model mModel;
+    /**
+     * view class定義建構子
+     * @param name
+     * @param window
+     * @param model 
+     */
 
     public View(String name, Window window, Model model) {
         mName = name;

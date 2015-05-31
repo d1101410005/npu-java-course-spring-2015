@@ -49,6 +49,7 @@ public class Subject {
         mObservers.remove(o);
     }
     /**
+     * 通報每個view到update
      */
     public void notifyObserver() {
         for (Observer o : mObservers){
