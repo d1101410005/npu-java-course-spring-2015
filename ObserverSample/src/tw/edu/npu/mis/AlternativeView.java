@@ -38,10 +38,11 @@ public class AlternativeView implements Observer , Showable{
     private final Window mWindow;
     //private final Model mModel;
     
-    /*public AlternativeView(Model model) {
-        mModel = model;
-        mModel.attach(this);
-    }*/
+/**
+ * AlternativeView class定義建構子
+ * @param window
+ * @param model 
+ */
     public AlternativeView(String name, Window window, Model model) {
         mName = name;
         mWindow = window;
