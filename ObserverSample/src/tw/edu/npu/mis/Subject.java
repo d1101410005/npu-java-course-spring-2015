@@ -35,14 +35,14 @@ import java.util.List;
 public class Subject {
     private List<Observer> mObservers = new ArrayList<>();
     /**
-     * attach到ArrayList
+     * attach到ArrayList，程式用意是新增
      * @param o 
      */
     public void attach(Observer o) {
         mObservers.add(o);
     }
     /**
-     * 
+     * detach到ArrayList，程式用意是刪除
      * @param o 
      */
     public void detach(Observer o) {
