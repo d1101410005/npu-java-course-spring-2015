@@ -49,7 +49,6 @@ public class Subject {
         mObservers.remove(o);
     }
     /**
-     * 
      */
     public void notifyObserver() {
         for (Observer o : mObservers){
