@@ -8,7 +8,10 @@ package tw.edu.npu.mis;
 /**
  * The model class of the calculator application.
  */
-public class Calculator {
+public class Calculator extends newjframe{
+    private Calculator c = null;
+    private newjframe Jtxt = new newjframe();
+    
     
     /**
      * The available operators of the calculator.

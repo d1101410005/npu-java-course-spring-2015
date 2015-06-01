@@ -171,6 +171,11 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button23.setLabel("<--");
+        button23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button23ActionPerformed(evt);
+            }
+        });
 
         button24.setLabel("M-");
 
@@ -370,6 +375,11 @@ public class newjframe extends javax.swing.JFrame {
         // TODO add your handling code here:
         textField1.setText(s="");
     }//GEN-LAST:event_button22ActionPerformed
+
+    private void button23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button23ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_button23ActionPerformed
 
     /**
      * @param args the command line arguments

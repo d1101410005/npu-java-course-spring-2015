@@ -317,6 +317,9 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="&lt;--"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button23ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button24">
       <Properties>
