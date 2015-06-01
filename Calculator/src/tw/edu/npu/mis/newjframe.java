@@ -11,6 +11,7 @@ package tw.edu.npu.mis;
  */
 public class newjframe extends javax.swing.JFrame {
 
+    String s="";
     /**
      * Creates new form newjframe
      */
@@ -282,13 +283,15 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("7");
+        s+="7";
+        textField1.setText(s);
         
     }//GEN-LAST:event_button1ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("2");
+        s+="2";
+        textField1.setText(s);
     }//GEN-LAST:event_button8ActionPerformed
 
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
@@ -300,7 +303,7 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("");
+        textField1.setText(s="");
         
     }//GEN-LAST:event_button10ActionPerformed
 
