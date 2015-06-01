@@ -235,7 +235,7 @@
     </Component>
     <Component class="java.awt.Button" name="button10">
       <Properties>
-        <Property name="label" type="java.lang.String" value="clear"/>
+        <Property name="label" type="java.lang.String" value="+/-"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button10ActionPerformed"/>
@@ -309,6 +309,9 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="C"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button22ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button23">
       <Properties>

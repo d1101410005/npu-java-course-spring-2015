@@ -119,7 +119,7 @@ public class newjframe extends javax.swing.JFrame {
             }
         });
 
-        button10.setLabel("clear");
+        button10.setLabel("+/-");
         button10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button10ActionPerformed(evt);
@@ -164,6 +164,11 @@ public class newjframe extends javax.swing.JFrame {
         button21.setLabel("CE");
 
         button22.setLabel("C");
+        button22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button22ActionPerformed(evt);
+            }
+        });
 
         button23.setLabel("<--");
 
@@ -303,54 +308,68 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
         // TODO add your handling code here:
-        textField1.setText(s="");
+        
         
     }//GEN-LAST:event_button10ActionPerformed
 
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
         // TODO add your handling code here:
-         textField1.setText("8");
+         s+="8";
+        textField1.setText(s);
     }//GEN-LAST:event_button2ActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("9");
+        s+="9";
+        textField1.setText(s);
     }//GEN-LAST:event_button3ActionPerformed
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("4");
+        s+="4";
+        textField1.setText(s);
     }//GEN-LAST:event_button4ActionPerformed
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("5");
+        s+="5";
+        textField1.setText(s);
     }//GEN-LAST:event_button5ActionPerformed
 
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("6");
+        s+="6";
+        textField1.setText(s);
     }//GEN-LAST:event_button6ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("1");
+        s+="1";
+        textField1.setText(s);
     }//GEN-LAST:event_button7ActionPerformed
 
     private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("3");
+        s+="3";
+        textField1.setText(s);
     }//GEN-LAST:event_button9ActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
         // TODO add your handling code here:
-        textField1.setText("0");
+        s+="0";
+        textField1.setText(s);
     }//GEN-LAST:event_button11ActionPerformed
 
     private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
         // TODO add your handling code here:
-        textField1.setText(".");
+        s+=".";
+        textField1.setText(s);
     }//GEN-LAST:event_button12ActionPerformed
+
+    private void button22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button22ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText(s="");
+    }//GEN-LAST:event_button22ActionPerformed
 
     /**
      * @param args the command line arguments
