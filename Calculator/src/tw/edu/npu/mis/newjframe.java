@@ -59,8 +59,18 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button2.setLabel("8");
+        button2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button2ActionPerformed(evt);
+            }
+        });
 
-        button3.setLabel("8");
+        button3.setLabel("9");
+        button3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button3ActionPerformed(evt);
+            }
+        });
 
         button4.setLabel("4");
 
@@ -79,7 +89,12 @@ public class newjframe extends javax.swing.JFrame {
 
         button9.setLabel("3");
 
-        button10.setLabel("+/-");
+        button10.setLabel("清除");
+        button10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button10ActionPerformed(evt);
+            }
+        });
 
         button11.setLabel("0");
 
@@ -94,6 +109,11 @@ public class newjframe extends javax.swing.JFrame {
         button16.setLabel("+");
 
         button17.setLabel("=");
+        button17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button17ActionPerformed(evt);
+            }
+        });
 
         button18.setLabel("MC");
 
@@ -195,11 +215,34 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
         // TODO add your handling code here:
+        textField1.setText("7");
+        
     }//GEN-LAST:event_button1ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_button8ActionPerformed
+
+    private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
+        // TODO add your handling code here:
+        int x;
+    }//GEN-LAST:event_button17ActionPerformed
+
+    private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("");
+        
+    }//GEN-LAST:event_button10ActionPerformed
+
+    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+        // TODO add your handling code here:
+         textField1.setText("8");
+    }//GEN-LAST:event_button2ActionPerformed
+
+    private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("9");
+    }//GEN-LAST:event_button3ActionPerformed
 
     /**
      * @param args the command line arguments
