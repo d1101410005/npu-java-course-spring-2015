@@ -276,6 +276,9 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="+"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button16ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button17">
       <Properties>

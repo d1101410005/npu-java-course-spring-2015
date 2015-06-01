@@ -147,6 +147,11 @@ public class newjframe extends javax.swing.JFrame {
         button15.setLabel("-");
 
         button16.setLabel("+");
+        button16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button16ActionPerformed(evt);
+            }
+        });
 
         button17.setLabel("=");
         button17.addActionListener(new java.awt.event.ActionListener() {
@@ -380,6 +385,10 @@ public class newjframe extends javax.swing.JFrame {
         // TODO add your handling code here:
         
     }//GEN-LAST:event_button23ActionPerformed
+
+    private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_button16ActionPerformed
 
     /**
      * @param args the command line arguments

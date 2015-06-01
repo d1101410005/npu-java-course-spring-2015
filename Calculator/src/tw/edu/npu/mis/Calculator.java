@@ -5,18 +5,27 @@
  */
 package tw.edu.npu.mis;
 
+import static org.omg.CORBA.ORB.init;
+
 /**
  * The model class of the calculator application.
  */
 public class Calculator extends newjframe{
     private Calculator c = null;
     private newjframe Jtxt = new newjframe();
+    private table UiAllObj = new table();
+    private Handler bh = new Handler();
+    
+    public Calculator(String frameName) {
+        super();
+        init();
+    }
     
     
     /**
      * The available operators of the calculator.
      */
-    public enum Operator {
+    public enum Operator {     //運算子
         CLEAR,       // C
         CLEAR_ENTRY, // CE
         BACKSPACE,   // ⌫
@@ -36,19 +45,19 @@ public class Calculator extends newjframe{
         MEM_RECALL   // MR
     }
     
-    public void appendDigit(int digit) {
+    public void appendDigit(int digit) {          //數字添加
         // TODO code application logic here
     }
     
-    public void appendDot() {
+    public void appendDot() {                   //追加點
         // TODO code application logic here
     }
     
-    public void performOperation(Operator operator) {
+    public void performOperation(Operator operator) {    //操作執行
         // TODO code application logic here
     }
     
-    public String getDisplay() {
+    public String getDisplay() {                //顯示器獲取
         // TODO code application logic here
         return null;
     }
