@@ -262,6 +262,8 @@ public class newjframe extends javax.swing.JFrame {
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
         // TODO add your handling code here:
         int x;
+         //x=Integer.parseInt(jTextField1.getText()) + Integer.parseInt(jTextField2.getText());
+       // jTextField3.setText(Integer.toString(x));
     }//GEN-LAST:event_button17ActionPerformed
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
