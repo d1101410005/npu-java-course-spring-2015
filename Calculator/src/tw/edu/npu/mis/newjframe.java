@@ -73,12 +73,32 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button4.setLabel("4");
+        button4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button4ActionPerformed(evt);
+            }
+        });
 
         button5.setLabel("5");
+        button5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button5ActionPerformed(evt);
+            }
+        });
 
         button6.setLabel("6");
+        button6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button6ActionPerformed(evt);
+            }
+        });
 
         button7.setLabel("1");
+        button7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button7ActionPerformed(evt);
+            }
+        });
 
         button8.setLabel("2");
         button8.addActionListener(new java.awt.event.ActionListener() {
@@ -88,8 +108,13 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button9.setLabel("3");
+        button9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button9ActionPerformed(evt);
+            }
+        });
 
-        button10.setLabel("清除");
+        button10.setLabel("clear");
         button10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button10ActionPerformed(evt);
@@ -97,8 +122,18 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button11.setLabel("0");
+        button11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button11ActionPerformed(evt);
+            }
+        });
 
         button12.setLabel(".");
+        button12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button12ActionPerformed(evt);
+            }
+        });
 
         button13.setLabel("/");
 
@@ -221,6 +256,7 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
         // TODO add your handling code here:
+        textField1.setText("2");
     }//GEN-LAST:event_button8ActionPerformed
 
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
@@ -244,39 +280,46 @@ public class newjframe extends javax.swing.JFrame {
         textField1.setText("9");
     }//GEN-LAST:event_button3ActionPerformed
 
+    private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("4");
+    }//GEN-LAST:event_button4ActionPerformed
+
+    private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("5");
+    }//GEN-LAST:event_button5ActionPerformed
+
+    private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("6");
+    }//GEN-LAST:event_button6ActionPerformed
+
+    private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("1");
+    }//GEN-LAST:event_button7ActionPerformed
+
+    private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("3");
+    }//GEN-LAST:event_button9ActionPerformed
+
+    private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText("0");
+    }//GEN-LAST:event_button11ActionPerformed
+
+    private void button12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button12ActionPerformed
+        // TODO add your handling code here:
+        textField1.setText(".");
+    }//GEN-LAST:event_button12ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new newjframe().setVisible(true);
-            }
-        });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
