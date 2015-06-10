@@ -15,6 +15,9 @@ public class newjframe extends javax.swing.JFrame {
     /**
      * Creates new form newjframe
      */
+    private double num1 = 0.0;
+    private double num2 = 0.0;
+    
     public newjframe() {
         initComponents();
     }
@@ -55,6 +58,12 @@ public class newjframe extends javax.swing.JFrame {
         button24 = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        textField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textField1ActionPerformed(evt);
+            }
+        });
 
         button1.setLabel("7");
         button1.addActionListener(new java.awt.event.ActionListener() {
@@ -311,9 +320,14 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button17ActionPerformed
         // TODO add your handling code here:
+       
+        
+        textField1.setText(""+(num1 + num2));
+        /*
         int x;
-         //x=Integer.parseInt(jTextField1.getText()) + Integer.parseInt(jTextField2.getText());
-       // jTextField3.setText(Integer.toString(x));
+        x=Integer.parseInt(jTextField1.getText()) + Integer.parseInt(jTextField2.getText());
+        jTextField3.setText(Integer.toString(x));
+         */
     }//GEN-LAST:event_button17ActionPerformed
 
     private void button10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button10ActionPerformed
@@ -388,7 +402,15 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
         // TODO add your handling code here:
+        num2 = Double.parseDouble(textField1.getText());
+                num1 += num2;
+                textField1.setText("0");
+                return;
     }//GEN-LAST:event_button16ActionPerformed
+
+    private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textField1ActionPerformed
 
     /**
      * @param args the command line arguments
