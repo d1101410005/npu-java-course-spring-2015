@@ -16,9 +16,11 @@ public class Calculator extends newjframe{
     private table UiAllObj = new table();
     private Handler bh = new Handler();
     
+    
+    
     public Calculator(String frameName) {
         super();
-        init();
+        
     }
     
     
@@ -47,14 +49,18 @@ public class Calculator extends newjframe{
     
     public void appendDigit(int digit) {          //數字添加
         // TODO code application logic here
+        
     }
     
-    public void appendDot() {                   //追加點
+    public void appendDot() {                   //小數點
         // TODO code application logic here
+        
     }
     
     public void performOperation(Operator operator) {    //操作執行
         // TODO code application logic here
+        
+        
     }
     
     public String getDisplay() {                //顯示器獲取

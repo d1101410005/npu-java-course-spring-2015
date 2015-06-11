@@ -264,16 +264,25 @@
       <Properties>
         <Property name="label" type="java.lang.String" value="/"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button14">
       <Properties>
         <Property name="label" type="java.lang.String" value="*"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button15">
       <Properties>
         <Property name="label" type="java.lang.String" value="-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="java.awt.Button" name="button16">
       <Properties>

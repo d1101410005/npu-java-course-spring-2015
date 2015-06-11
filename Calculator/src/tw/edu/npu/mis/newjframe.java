@@ -150,10 +150,25 @@ public class newjframe extends javax.swing.JFrame {
         });
 
         button13.setLabel("/");
+        button13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button13ActionPerformed(evt);
+            }
+        });
 
         button14.setLabel("*");
+        button14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button14ActionPerformed(evt);
+            }
+        });
 
         button15.setLabel("-");
+        button15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                button15ActionPerformed(evt);
+            }
+        });
 
         button16.setLabel("+");
         button16.addActionListener(new java.awt.event.ActionListener() {
@@ -402,15 +417,36 @@ public class newjframe extends javax.swing.JFrame {
 
     private void button16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button16ActionPerformed
         // TODO add your handling code here:
-        num2 = Double.parseDouble(textField1.getText());
+     s+="+";
+        textField1.setText(s);
+        /* num2 = Double.parseDouble(textField1.getText());
                 num1 += num2;
                 textField1.setText("0");
                 return;
+        */
     }//GEN-LAST:event_button16ActionPerformed
 
     private void textField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_textField1ActionPerformed
+
+    private void button15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button15ActionPerformed
+        // TODO add your handling code here:
+        s+="-";
+        textField1.setText(s);
+    }//GEN-LAST:event_button15ActionPerformed
+
+    private void button14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button14ActionPerformed
+        // TODO add your handling code here:
+        s+="*";
+        textField1.setText(s);
+    }//GEN-LAST:event_button14ActionPerformed
+
+    private void button13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button13ActionPerformed
+        // TODO add your handling code here:
+        s+="/";
+        textField1.setText(s);
+    }//GEN-LAST:event_button13ActionPerformed
 
     /**
      * @param args the command line arguments
