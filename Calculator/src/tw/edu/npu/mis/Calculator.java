@@ -88,6 +88,7 @@ public class Calculator extends java.util.Observable{
                          break;
                     case "/":
                        y= Integer.parseInt(number);
+                        number = String.valueOf(x/y);
                         getDisplay();
                         number ="";
                          break;

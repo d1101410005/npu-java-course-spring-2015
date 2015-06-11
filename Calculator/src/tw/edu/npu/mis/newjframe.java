@@ -432,12 +432,14 @@ public class newjframe extends javax.swing.JFrame  implements java.util.Observer
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
-        cal.appendDigit(Integer.parseInt(jButton16.getText()));
+        //cal.appendDigit(Integer.parseInt(jButton16.getText()));
+        cal.notation(jButton16.getText());
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
-        cal.appendDigit(Integer.parseInt(jButton17.getText()));
+        //cal.appendDigit(Integer.parseInt(jButton17.getText()));
+        cal.notation(jButton17.getText());
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
