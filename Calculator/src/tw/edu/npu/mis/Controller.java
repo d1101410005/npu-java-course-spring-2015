@@ -10,11 +10,25 @@ package tw.edu.npu.mis;
  * @author STP
  */
 public class Controller {
-    Model mModel;
+    newjframe mModel;
     Calculator mView;
-    public Controller()
+    public Controller(newjframe model)
     {
         mModel = model;
     }
+    public void setData(String da)
+    {
+        mModel.appendDigit(Integer.parseInt(da));
+        
+    }
+     public void setOperator(String oper)
+    {
+        mModel.setOperator(oper);
+    }
     
+    public void addView(Calculator view){
+		mView = view;
+                mModel.getDisplay();
+   
+    }
 }
