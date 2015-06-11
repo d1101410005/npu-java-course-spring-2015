@@ -12,7 +12,7 @@ package tw.edu.npu.mis;
 public class Controller {
     newjframe mModel;
     Calculator mView;
-    public Controller(newjframe model)
+    public Controller(Calculator model)
     {
         mModel = model;
     }

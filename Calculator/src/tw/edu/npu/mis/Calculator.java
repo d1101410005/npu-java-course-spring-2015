@@ -12,10 +12,12 @@ import static org.omg.CORBA.ORB.init;
  */
 public class Calculator extends java.util.Observable{
  int x,y;
-    
+    Controller mco;
     String number = "";
     String Access = "";
     String Determine = "";
+    
+   
     
     
     

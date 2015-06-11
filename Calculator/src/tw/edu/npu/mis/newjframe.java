@@ -13,17 +13,17 @@ import tw.edu.npu.mis.Calculator.Operator;
  * @author STP
  */
 public class newjframe extends javax.swing.JFrame  implements java.util.Observer{
-    Calculator cal;
+    //Calculator cal;
+    Controller mController;
 
-  
     /**
      * Creates new form newjframe
      */
     private double num1 = 0.0;
     private double num2 = 0.0;
     
-    public newjframe( Calculator mModel) {
-        cal = mModel;
+    public newjframe(Calculator mcontroller) {
+        mController = mcontroller;
         initComponents();
     }
 
@@ -400,6 +400,7 @@ public class newjframe extends javax.swing.JFrame  implements java.util.Observer
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
         cal.appendDigit(Integer.parseInt(jButton10.getText()));
+        
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -517,7 +518,8 @@ public class newjframe extends javax.swing.JFrame  implements java.util.Observer
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 Calculator model = new Calculator();
-               newjframe view = new newjframe(model);
+                newjframe view = new newjframe(model);
+                ss.addView(view);
                 view.setVisible(true);
                 model.addObserver(view);
             }
@@ -556,4 +558,5 @@ public class newjframe extends javax.swing.JFrame  implements java.util.Observer
     public void update(Observable o, Object arg) {
        textField1.setText(arg.toString());
     }
+
 }
