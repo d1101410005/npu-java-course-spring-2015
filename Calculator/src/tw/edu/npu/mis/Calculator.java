@@ -60,7 +60,6 @@ public class Calculator extends java.util.Observable{
                 number = "0";
                 getDisplay();
                 number = "";
-                
                 break;
             case CLEAR_ENTRY:
                 break;
@@ -93,7 +92,6 @@ public class Calculator extends java.util.Observable{
                         number ="";
                          break;
                }
-              
                 break;
             case PLUS:
                 x= Integer.parseInt(number);
