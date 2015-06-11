@@ -10,5 +10,11 @@ package tw.edu.npu.mis;
  * @author STP
  */
 public class Controller {
+    Model mModel;
+    Calculator mView;
+    public Controller()
+    {
+        mModel = model;
+    }
     
 }
