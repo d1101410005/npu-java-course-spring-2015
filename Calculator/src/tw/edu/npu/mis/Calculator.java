@@ -10,18 +10,13 @@ import static org.omg.CORBA.ORB.init;
 /**
  * The model class of the calculator application.
  */
-public class Calculator extends newjframe{
-    private Calculator c = null;
-    private newjframe Jtxt = new newjframe();
-    private table UiAllObj = new table();
-    private Handler bh = new Handler();
+public class Calculator extends java.util.Observable{
+
     
+    String number = "";
+    String Access = "";
+    String Determine = "";
     
-    
-    public Calculator(String frameName) {
-        super();
-        
-    }
     
     
     /**
@@ -49,7 +44,8 @@ public class Calculator extends newjframe{
     
     public void appendDigit(int digit) {          //數字添加
         // TODO code application logic here
-        
+      number += String.valueOf(digit);
+      getDisplay();
     }
     
     public void appendDot() {                   //小數點
@@ -59,51 +55,60 @@ public class Calculator extends newjframe{
     
     public void performOperation(Operator operator) {    //操作執行
         // TODO code application logic here
+        switch(operator){
+            case CLEAR:
+                break;
+            case CLEAR_ENTRY:
+                break;
+            case BACKSPACE:
+                break;
+            case EQUAL:
+                break;
+            case PLUS:
+                performOperation(Operator.EQUAL);
+                if(number.length() != 0) Access = number;
+                number = "";
+                Determine = "+";
+                
+                break;
+            case MINUS:
+                break;
+            case TIMES:
+                break;
+            case OVER:
+                break;
+            case PLUS_MINUS:
+                break;
+            case RECIPROCAL:
+                break;
+            case PERCENT:
+                break;
+            case SQRT:
+                break;
+            case MEM_CLEAR:
+                break;
+            case MEM_SET:
+                break;
+            case MEM_PLUS:
+                break;
+            case MEM_MINUS:
+                break;
+            case MEM_RECALL:
+                break;
+            
+                
         
-        
+        }
     }
     
     public String getDisplay() {                //顯示器獲取
         // TODO code application logic here
+        setChanged();
+        notifyObservers(number);
         return null;
     }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(newjframe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new newjframe().setVisible(true);
-            }
-        });
-    }
+    
     }
 
 
