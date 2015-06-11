@@ -11,7 +11,7 @@ import static org.omg.CORBA.ORB.init;
  * The model class of the calculator application.
  */
 public class Calculator extends java.util.Observable{
-
+ int x,y;
     
     String number = "";
     String Access = "";
@@ -57,25 +57,66 @@ public class Calculator extends java.util.Observable{
         // TODO code application logic here
         switch(operator){
             case CLEAR:
+                number = "0";
+                getDisplay();
+                number = "";
+                
                 break;
             case CLEAR_ENTRY:
                 break;
             case BACKSPACE:
                 break;
             case EQUAL:
+               switch(Determine){
+                    case "+":
+                        y= Integer.parseInt(number);
+                        number = String.valueOf(x+y);
+                        getDisplay();
+                        number ="";
+                        break;
+                    case "-":
+                       y= Integer.parseInt(number);
+                        number = String.valueOf(x-y);
+                        getDisplay();
+                        number ="";
+                         break;
+                    case "*":
+                       y= Integer.parseInt(number);
+                        number = String.valueOf(x*y);
+                        getDisplay();
+                        number ="";
+                         break;
+                    case "/":
+                       y= Integer.parseInt(number);
+                        getDisplay();
+                        number ="";
+                         break;
+               }
+              
                 break;
             case PLUS:
-                performOperation(Operator.EQUAL);
-                if(number.length() != 0) Access = number;
+                x= Integer.parseInt(number);
                 number = "";
+                getDisplay();
                 Determine = "+";
-                
                 break;
             case MINUS:
+                x= Integer.parseInt(number);
+                number = "";
+                getDisplay();
+                Determine = "-";
                 break;
             case TIMES:
+                x= Integer.parseInt(number);
+                number = "";
+                getDisplay();
+                Determine = "*";
                 break;
             case OVER:
+                x= Integer.parseInt(number);
+                number = "";
+                getDisplay();
+                Determine = "/";
                 break;
             case PLUS_MINUS:
                 break;
@@ -106,6 +147,15 @@ public class Calculator extends java.util.Observable{
         setChanged();
         notifyObservers(number);
         return null;
+    }
+    public void notation(String tnt)
+    {
+        if(tnt == "+") performOperation(Operator.PLUS);
+        if(tnt == "=") performOperation(Operator.EQUAL);
+        if(tnt == "C") performOperation(Operator.CLEAR);
+        if(tnt == "-") performOperation(Operator.MINUS);
+        if(tnt == "*") performOperation(Operator.TIMES);
+        if(tnt == "/") performOperation(Operator.OVER);
     }
 
     
