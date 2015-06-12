@@ -358,153 +358,153 @@ public class newjframe extends javax.swing.JFrame  implements java.util.Observer
     }//GEN-LAST:event_textField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        mCt.setData(jButton1.getText());
+        mCt.Data(jButton1.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
          //cal.appendDigit(Integer.parseInt(jButton2.getText()));
-        mCt.setData(jButton2.getText());
+        mCt.Data(jButton2.getText());
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
          //cal.appendDigit(Integer.parseInt(jButton3.getText()));
-        mCt.setData(jButton3.getText());
+        mCt.Data(jButton3.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         // cal.appendDigit(Integer.parseInt(jButton4.getText()));
-        mCt.setData(jButton4.getText());
+        mCt.Data(jButton4.getText());
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
        // cal.appendDigit(Integer.parseInt(jButton5.getText()));
-        mCt.setData(jButton5.getText());
+        mCt.Data(jButton5.getText());
         
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton7.getText()));
-        mCt.setData(jButton7.getText());
+        mCt.Data(jButton7.getText());
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton8.getText()));
-        mCt.setData(jButton8.getText());
+        mCt.Data(jButton8.getText());
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton9.getText()));
-        mCt.setData(jButton9.getText());
+        mCt.Data(jButton9.getText());
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton10.getText()));
-        mCt.setData(jButton10.getText());
+        mCt.Data(jButton10.getText());
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton11.getText()));
-        mCt.setData(jButton11.getText());
+        mCt.Data(jButton11.getText());
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton12.getText()));
-        mCt.setData(jButton12.getText());
+        mCt.Data(jButton12.getText());
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton13.getText()));
         //cal.notation(jButton13.getText());
-        mCt.setOperator(jButton13.getText());
+        mCt.Operator(jButton13.getText());
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton14.getText()));
         //cal.notation(jButton14.getText());
-        mCt.setOperator(jButton14.getText());
+        mCt.Operator(jButton14.getText());
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
        // cal.appendDigit(Integer.parseInt(jButton15.getText()));
         //cal.notation(jButton15.getText());
-        mCt.setOperator(jButton15.getText());
+        mCt.Operator(jButton15.getText());
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton16.getText()));
         //cal.notation(jButton16.getText());
-        mCt.setOperator(jButton16.getText());
+        mCt.Operator(jButton16.getText());
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton17.getText()));
         //cal.notation(jButton17.getText());
-        mCt.setOperator(jButton17.getText());
+        mCt.Operator(jButton17.getText());
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton19.getText()));
         //cal.notation(jButton19.getText());
-        mCt.setOperator(jButton19.getText());
+        mCt.Operator(jButton19.getText());
         
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton20.getText()));
-        mCt.setData(jButton20.getText());
+        mCt.Data(jButton20.getText());
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton21.getText()));
-        mCt.setData(jButton21.getText());
+        mCt.Data(jButton21.getText());
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton22.getText()));
-        mCt.setData(jButton22.getText());
+        mCt.Data(jButton22.getText());
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton6.getText()));
-        mCt.setData(jButton6.getText());
+        mCt.Data(jButton6.getText());
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton23.getText()));
-        mCt.setData(jButton23.getText());
+        mCt.Data(jButton23.getText());
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton24.getText()));
-        mCt.setData(jButton24.getText());
+        mCt.Data(jButton24.getText());
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         // TODO add your handling code here:
         //cal.appendDigit(Integer.parseInt(jButton25.getText()));
-        mCt.setData(jButton25.getText());
+        mCt.Data(jButton25.getText());
     }//GEN-LAST:event_jButton25ActionPerformed
 
    /**

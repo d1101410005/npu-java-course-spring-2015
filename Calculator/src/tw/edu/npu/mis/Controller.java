@@ -16,23 +16,34 @@ public class Controller {
     Calculator Cal;
     newjframe mnewjframe;
     /**
-     * 讓Contoller
+     * 讓Controller了解到cal的方法
      * @param cal 
      */
     public Controller(Calculator cal)
     {
         Cal = cal;
     }
-    
-    public void setOperator(String oper)
+    /**
+     * Operator 是運算符號，傳遞到newjframe
+     * @param oper 
+     */
+    public void Operator(String oper)
     {
         Cal.notation(oper);
     }
-    public void setData(String da)
+    /**
+     * Data是數字，傳遞到newjframe
+     * @param da 
+     */
+    public void Data(String da)
     {
         Cal.appendDigit(Integer.parseInt(da));
         
     }
+    /**
+     * 
+     * @param jframe 
+     */
     public void addView(newjframe jframe){
 		mnewjframe = jframe;
                 Cal.getDisplay();
