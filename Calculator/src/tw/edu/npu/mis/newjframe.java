@@ -513,8 +513,9 @@ public class newjframe extends javax.swing.JFrame implements java.util.Observer{
     }//GEN-LAST:event_jButton25ActionPerformed
 
    /**
-    * 
-    * 
+    * New Calculator Controller newjframe 物件
+    * controller 讀取 calculator
+    * newjframe 讀取 controller
     * @param args the command line arguments
     * 把view丟到觀察者(Observer)
      */
