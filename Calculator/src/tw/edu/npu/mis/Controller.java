@@ -4,31 +4,32 @@
  * and open the template in the editor.
  */
 package tw.edu.npu.mis;
-
+import tw.edu.npu.mis.Calculator.Operator;
 /**
  *
  * @author STP
  */
 public class Controller {
-    newjframe mModel;
-    Calculator mView;
-    public Controller(Calculator model)
+    Calculator Cal;
+    newjframe mnewjframe;
+    
+    public Controller(Calculator cal)
     {
-        mModel = model;
+        Cal = cal;
     }
     public void setData(String da)
     {
-        mModel.appendDigit(Integer.parseInt(da));
+        Cal.appendDigit(Integer.parseInt(da));
         
     }
      public void setOperator(String oper)
     {
-        mModel.setOperator(oper);
+        Cal.notation(oper);
     }
     
-    public void addView(Calculator view){
-		mView = view;
-                mModel.getDisplay();
+    public void addView(newjframe jframe){
+		mnewjframe = jframe;
+                Cal.getDisplay();
    
     }
 }
