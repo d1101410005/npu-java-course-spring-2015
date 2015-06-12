@@ -166,6 +166,10 @@ public class Calculator extends java.util.Observable{
         notifyObservers(number);
         return null;
     }
+    /**
+     * Operator是在存取運算符號，而Contoller抓取這邊的運算符號去執行功能
+     * @param tnt 
+     */
     public void notation(String tnt)
     {
         if(tnt == "+") performOperation(Operator.PLUS);
@@ -174,9 +178,7 @@ public class Calculator extends java.util.Observable{
         if(tnt == "-") performOperation(Operator.MINUS);
         if(tnt == "*") performOperation(Operator.TIMES);
         if(tnt == "/") performOperation(Operator.OVER);
-    }
-
-    
+    } 
     }
 
 
