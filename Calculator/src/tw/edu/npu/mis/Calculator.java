@@ -11,10 +11,19 @@ import static org.omg.CORBA.ORB.init;
  * The model class of the calculator application.
  */
 public class Calculator extends java.util.Observable{
- int x,y;
-    Controller mco;
-    String number = "";
-    String Access = "";
+    /**
+     * 宣告變數
+     */
+    int x,y;     
+    
+    /**
+     * number 是運算過程的結果
+     * Access 是存取數字的地方
+     * Determine 是判斷要用哪一個計算方法
+     */
+    Controller mco;     
+    String number = "";    
+    String Access = ""; 
     String Determine = "";
     
    
@@ -43,7 +52,10 @@ public class Calculator extends java.util.Observable{
         MEM_MINUS,   // M-
         MEM_RECALL   // MR
     }
-    
+    /**
+     * appendDigit是做數字的輸入，按鈕按下數字，就能讓數字出現
+     * @param digit 
+     */
     public void appendDigit(int digit) {          //數字添加
         // TODO code application logic here
       number += String.valueOf(digit);
@@ -52,9 +64,11 @@ public class Calculator extends java.util.Observable{
     
     public void appendDot() {                   //小數點
         // TODO code application logic here
-        
     }
-    
+    /**
+     * 判斷各種運算的功能
+     * @param operator 
+     */
     public void performOperation(Operator operator) {    //操作執行
         // TODO code application logic here
         switch(operator){
@@ -142,7 +156,10 @@ public class Calculator extends java.util.Observable{
         
         }
     }
-    
+    /**
+     * 獲取運算結果
+     * @return 
+     */
     public String getDisplay() {                //顯示器獲取
         // TODO code application logic here
         setChanged();
