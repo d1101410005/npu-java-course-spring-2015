@@ -14,7 +14,7 @@ public class Calculator extends java.util.Observable{
     /**
      * 宣告變數
      */
-    int x,y;     
+   double x,y;     
     
     /**
      * number 是運算過程的結果

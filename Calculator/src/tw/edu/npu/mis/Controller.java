@@ -13,7 +13,7 @@ public class Controller {
     /**
      * 宣告變數
      */
-    Calculator Cal;
+    Calculator mCal;
     newjframe mnewjframe;
     /**
      * 讓Controller了解到cal的方法
@@ -21,7 +21,7 @@ public class Controller {
      */
     public Controller(Calculator cal)
     {
-        Cal = cal;
+        mCal = cal;
     }
     /**
      * Operator 是運算符號，傳遞到newjframe
@@ -29,7 +29,7 @@ public class Controller {
      */
     public void Operator(String oper)
     {
-        Cal.notation(oper);
+        mCal.notation(oper);
     }
     /**
      * Data是數字，傳遞到newjframe
@@ -37,16 +37,16 @@ public class Controller {
      */
     public void Data(String da)
     {
-        Cal.appendDigit(Integer.parseInt(da));
+        mCal.appendDigit(Integer.parseInt(da));
         
     }
     /**
-     * 
+     * 在Controller中，新增jframe
      * @param jframe 
      */
     public void addView(newjframe jframe){
 		mnewjframe = jframe;
-                Cal.getDisplay();
+                mCal.getDisplay();
    
     }
 }
